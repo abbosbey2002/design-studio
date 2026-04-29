@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary -->
+  <title>Forge — Toshkentda veb-sayt va Telegram bot yaratamiz · CRM, do'kon</title>
+  <meta name="description" content="Click, Payme va 1C bilan integratsiyalashgan custom veb-saytlar, Telegram botlar, CRM va onlayn do'konlar. Senior muhandislar, Toshkent. Sayt 4 haftada, bot 2 haftada." />
+  <meta name="keywords" content="sayt yaratish Toshkent, Telegram bot yaratish, buyurtma boti, Telegram bot O'zbekiston, CRM tizim, onlayn do'kon, Click integratsiya, Payme integratsiya, 1C integratsiya, Mini App, Toshkent IT studio, Forge studio, создание сайта Ташкент, Telegram-бот Узбекистан, бот для заказов, разработка ботов" />
+  <meta name="author" content="Forge Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#F8F4ED" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0E1729" media="(prefers-color-scheme: dark)" />
+
+  <!-- Geo (Tashkent targeting) -->
+  <meta name="geo.region" content="UZ-TK" />
+  <meta name="geo.placename" content="Tashkent" />
+  <meta name="geo.position" content="41.2995;69.2401" />
+  <meta name="ICBM" content="41.2995, 69.2401" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://forge.studio/" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="uz" href="https://forge.studio/" />
+  <link rel="alternate" hreflang="ru" href="https://forge.studio/?lang=ru" />
+  <link rel="alternate" hreflang="en" href="https://forge.studio/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://forge.studio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="uz_UZ" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:url" content="https://forge.studio/" />
+  <meta property="og:site_name" content="Forge Studio" />
+  <meta property="og:title" content="Forge — Veb-sayt va Telegram bot yaratuvchi studiya" />
+  <meta property="og:description" content="Veb-sayt + Telegram bot — bitta paketda. Click, Payme, 1C standart integratsiyalari. Senior muhandislar yozadi, juniorlar emas." />
+  <meta property="og:image" content="https://forge.studio/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Forge — Veb-sayt va Telegram bot. Bitta paketda." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forge — Veb-sayt va Telegram bot yaratuvchi studiya" />
+  <meta name="twitter:description" content="Veb-sayt + Telegram bot — bitta paketda. Click, Payme, 1C bilan." />
+  <meta name="twitter:image" content="https://forge.studio/og-image.svg" />
+
+  <!-- Telegram preview -->
+  <meta name="telegram:channel" content="@forge_studio" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="apple-touch-icon" href="./favicon.svg" />
+  <link rel="mask-icon" href="./favicon.svg" color="#E94B36" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://picsum.photos" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700;800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- Structured data: Organization, LocalBusiness, WebSite, Services, FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forge.studio/#organization",
+        "name": "Forge Studio",
+        "alternateName": "Forge",
+        "url": "https://forge.studio/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://forge.studio/og-image.svg",
+          "width": 1200,
+          "height": 630
+        },
+        "description": "Boutique IT studio in Tashkent building custom websites, CRMs, business apps and online stores with built-in Click, Payme and 1C integrations.",
+        "foundingDate": "2024",
+        "founders": [{ "@type": "Person", "name": "Aziz Karimov" }],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tashkent",
+          "addressRegion": "Tashkent",
+          "addressCountry": "UZ"
+        },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+998-90-123-45-67",
+          "contactType": "sales",
+          "areaServed": ["UZ", "RU", "KZ", "AE"],
+          "availableLanguage": ["Uzbek", "Russian", "English"]
+        }],
+        "sameAs": [
+          "https://t.me/forge_studio",
+          "https://github.com/forge-studio",
+          "https://www.linkedin.com/company/forge-studio"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://forge.studio/#localbusiness",
+        "name": "Forge Studio",
+        "image": "https://forge.studio/og-image.svg",
+        "url": "https://forge.studio/",
+        "telephone": "+998-90-123-45-67",
+        "email": "hello@forge.studio",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tashkent",
+          "addressCountry": "UZ"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.2995,
+          "longitude": 69.2401
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }],
+        "areaServed": [
+          { "@type": "Country", "name": "Uzbekistan" },
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "Kazakhstan" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://forge.studio/#website",
+        "url": "https://forge.studio/",
+        "name": "Forge Studio",
+        "publisher": { "@id": "https://forge.studio/#organization" },
+        "inLanguage": ["uz", "ru", "en"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://forge.studio/#service-website",
+        "serviceType": "Website Development",
+        "name": "Custom Marketing Websites",
+        "description": "Trilingual (UZ/RU/EN) marketing sites with Click and Payme integrations. Astro or Next.js, Lighthouse 98+.",
+        "provider": { "@id": "https://forge.studio/#organization" },
+        "areaServed": "UZ",
+        "offers": {
+          "@type": "Offer",
+          "price": "2400",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "2400",
+            "priceCurrency": "USD",
+            "minPrice": "2400"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://forge.studio/#service-crm",
+        "serviceType": "CRM Development",
+        "name": "Custom CRM Systems",
+        "description": "CRM with two-way 1C sync, role-based access, audit logs, and Telegram bot notifications. An alternative to amoCRM and Bitrix24.",
+        "provider": { "@id": "https://forge.studio/#organization" },
+        "areaServed": "UZ",
+        "offers": {
+          "@type": "Offer",
+          "price": "6400",
+          "priceCurrency": "USD",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": "6400", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://forge.studio/#service-bot",
+        "serviceType": "Telegram Bot Development",
+        "name": "Telegram Bots and Mini Apps",
+        "description": "Order-taking Telegram bots with Click and Payme payments inside the bot, real-time CRM and 1C sync, Mini Apps and admin panels. 50% of orders in Uzbekistan come through Telegram — we automate that channel.",
+        "provider": { "@id": "https://forge.studio/#organization" },
+        "areaServed": "UZ",
+        "offers": {
+          "@type": "Offer",
+          "price": "1200",
+          "priceCurrency": "USD",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": "1200", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://forge.studio/#service-store",
+        "serviceType": "E-commerce Development",
+        "name": "Online Stores",
+        "description": "Shopify Hydrogen and custom storefronts with Click, Payme, Uzum BNPL and Telegram bot order capture.",
+        "provider": { "@id": "https://forge.studio/#organization" },
+        "areaServed": "UZ",
+        "offers": {
+          "@type": "Offer",
+          "price": "3600",
+          "priceCurrency": "USD",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": "3600", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://forge.studio/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you work with Click, Payme and other Uzbek payment systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, by default. Click, Payme, Uzcard, Humo, Uzum BNPL and Stripe are built into every project at no extra charge."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you integrate with 1C?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our CRM solutions sync two-way with 1C in real time. It's our most common integration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a project take and is the price fixed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Marketing site — 4 to 6 weeks. CRM — 8 to 14 weeks. Mobile app — 10 to 16 weeks. After discovery we provide a written SOW with a fixed price."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you only work in Tashkent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We have 47 clients across Tashkent, Dubai and Almaty. Projects can be fully remote."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you use WordPress or templates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Every project is written from scratch — Astro, Next.js, React Native or your stack. Templates break after 6 months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is post-launch support included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. 30 days of post-launch support is included in every project — bug fixes, observability, hotfixes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you build Telegram bots and Mini Apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — Telegram bots are one of our core services. Order-taking bots, Click and Payme payments inside the bot, CRM/1C sync, Mini Apps and admin panels. Bots ship in 2 to 4 weeks. Order a website and bot together — bundled discount applies."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip-to-content for a11y -->
+  <a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.cssText='position:fixed;top:8px;left:8px;width:auto;height:auto;padding:8px 14px;background:#0E1729;color:#fff;z-index:9999;border-radius:4px;'">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="Forge — bosh sahifa">
+      <span class="brand-mark"><span>F</span></span>
+      Forge
+    </a>
+    <nav aria-label="Asosiy menyu">
+      <a href="#services" data-i18n="nav.services">Xizmatlar</a>
+      <a href="#work" data-i18n="nav.work">Ishlar</a>
+      <a href="#process" data-i18n="nav.process">Jarayon</a>
+      <a href="#pricing" data-i18n="nav.pricing">Narxlar</a>
+      <a href="#contact" class="is-cta">
+        <span data-i18n="nav.cta">Qo'ng'iroq buyurtma</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Til tanlash">
+      <button data-lang="uz" aria-label="O'zbek tilini tanlash">UZ</button>
+      <button data-lang="ru" aria-label="Выбрать русский язык">RU</button>
+      <button data-lang="en" aria-label="Choose English language">EN</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Bosh sahifa">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="kicker reveal-up" data-i18n="hero.kicker">Toshkentdagi IT studiya · Senior muhandislar</span>
+            <h1 class="h-display reveal-up">
+              <span data-i18n="hero.title_1">Excel'dan haqiqiy</span>
+              <span data-i18n="hero.title_2">tizimga.</span><br/>
+              <span class="underline-coral" data-i18n="hero.title_underline">9 haftada</span>.
+            </h1>
+            <p class="body-lg reveal-up" style="max-width: 560px;" data-i18n="hero.lead">
+              Click, Payme va 1C bilan default integratsiyalashgan custom veb-saytlar, CRM va biznes ilovalar. WordPress template emas — har bir loyiha 0 dan yoziladi. Senior muhandislar, juniorlar emas.
+            </p>
+            <div class="hero-actions reveal-up">
+              <a href="#contact" class="btn btn-primary">
+                <span data-i18n="hero.cta_call">Bepul 30-daqiqalik konsultatsiya</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="#services" class="btn btn-ghost" data-i18n="hero.cta_services">
+                Xizmatlarni ko'rish
+              </a>
+            </div>
+            <div class="hero-trust reveal-up">
+              <div class="avs" aria-hidden="true">
+                <div class="av a1">A</div>
+                <div class="av a2">N</div>
+                <div class="av a3">L</div>
+                <div class="av a4">+</div>
+              </div>
+              <div class="copy">
+                <span class="stars" aria-hidden="true">★★★★★</span> &nbsp;<span data-i18n="hero.trust" data-i18n-html><b>47 ta loyiha</b> tayyor — <b>12 ta sohada</b><br/>Toshkent, Dubay va Almati bo'ylab.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-up" aria-hidden="true">
+            <div class="hero-screen">
+              <div class="hero-screen-bar">
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                <div class="url">app.forge.studio/dashboard</div>
+              </div>
+              <div class="hero-screen-body">
+                <div class="stat-row">
+                  <div class="stat">
+                    <div class="label">Revenue</div>
+                    <div class="value">$2.4M<span class="up">↗</span></div>
+                  </div>
+                  <div class="stat">
+                    <div class="label">Active</div>
+                    <div class="value">1,284<span class="up">+12%</span></div>
+                  </div>
+                  <div class="stat">
+                    <div class="label">Uptime</div>
+                    <div class="value">99.9<span class="up">%</span></div>
+                  </div>
+                </div>
+                <div class="hero-screen-chart">
+                  <div class="chart-head">
+                    <h5>Monthly recurring revenue</h5>
+                    <span class="pill">+38% YoY</span>
+                  </div>
+                  <svg viewBox="0 0 320 80" preserveAspectRatio="none" role="img" aria-label="Revenue growth chart">
+                    <defs>
+                      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#E94B36" stop-opacity="0.25"/>
+                        <stop offset="100%" stop-color="#E94B36" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M 0 60 L 30 56 L 60 50 L 90 48 L 120 38 L 150 32 L 180 34 L 210 22 L 240 16 L 270 12 L 300 8 L 320 6 L 320 80 L 0 80 Z" fill="url(#g1)"/>
+                    <path d="M 0 60 L 30 56 L 60 50 L 90 48 L 120 38 L 150 32 L 180 34 L 210 22 L 240 16 L 270 12 L 300 8 L 320 6" fill="none" stroke="#E94B36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="320" cy="6" r="4" fill="#E94B36"/>
+                    <circle cx="320" cy="6" r="9" fill="#E94B36" fill-opacity="0.2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-badge b1">
+              <div class="icon">↗</div>
+              <div class="copy"><b data-i18n="hero.badge_1_b">Lighthouse 98</b><small data-i18n="hero.badge_1_s">o'tgan hafta yetkazildi</small></div>
+            </div>
+            <div class="hero-badge b2">
+              <div class="icon">✓</div>
+              <div class="copy"><b data-i18n="hero.badge_2_b">1C bilan to'liq sinxron</b><small data-i18n="hero.badge_2_s">real-time, ikki tomonlama</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY — local payment integrations -->
+    <section class="trust" aria-label="Mahalliy integratsiyalar">
+      <div class="container">
+        <p class="trust-head" data-i18n="trust">Mahalliy integratsiyalar — har bir loyiha qutidan</p>
+        <div class="trust-row">
+          <div class="trust-logo" title="Click">
+            <span class="logo-svg">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="name">Click</span>
+            </span>
+          </div>
+          <div class="trust-logo" title="Payme">
+            <span class="logo-svg">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span class="name">Pay<b>me</b></span>
+            </span>
+          </div>
+          <div class="trust-logo" title="Uzcard">
+            <span class="logo-svg">
+              <span class="name">Uz<b>card</b></span>
+            </span>
+          </div>
+          <div class="trust-logo" title="Humo">
+            <span class="logo-svg">
+              <span class="name"><b>Humo</b></span>
+            </span>
+          </div>
+          <div class="trust-logo" title="1C">
+            <span class="logo-svg">
+              <span class="name"><b>1С</b></span>
+            </span>
+          </div>
+          <div class="trust-logo" title="Telegram">
+            <span class="logo-svg">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 4L2.5 11l6 2.5L17 7l-7 7.5L9.5 21l3-4 5 3 3-16z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              <span class="name">Telegram</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services-head">
+          <div class="section-head reveal-up">
+            <span class="kicker" data-i18n="services.kicker">Biz qiladigan ishlar</span>
+            <h2 class="h-1" id="services-title">
+              <span data-i18n="services.title_1">To'rtta xizmat,</span><br/>
+              <em class="italic spot" data-i18n="services.title_2">bitta jamoa</em>.
+            </h2>
+          </div>
+          <p class="body-lg reveal-up" style="max-width: 380px;" data-i18n="services.lead">
+            Aksariyat loyihalar ikki yoki uchtasini birlashtiradi. Birinchi qo'ng'iroqdan ishga tushirishgacha bir xil senior muhandislar.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- 01 — Website -->
+          <article class="service reveal-up">
+            <div class="service-num"><span class="n">01</span> <span data-i18n="services.s1_label">Veb-sayt</span></div>
+            <h3>
+              <span data-i18n="services.s1_title_1">Marketing sayt va</span>
+              <em data-i18n="services.s1_title_2">editorial</em>
+              <span data-i18n="services.s1_title_3">platformalar.</span>
+            </h3>
+            <p class="service-desc" data-i18n="services.s1_desc">
+              UZ/RU/EN trilingual default. Click va Payme to'lovlar qutidan. WordPress template emas — Astro yoki Next.js bilan har bir piksel sizniki uchun yoziladi.
+            </p>
+            <div class="service-mockup">
+              <div class="mock-website">
+                <div class="nav">
+                  <div class="lg">Atlas<b>·</b></div>
+                  <div class="links"><span>WORK</span><span>SERVICES</span><span>ABOUT</span></div>
+                </div>
+                <div class="hero-block">
+                  <div>
+                    <div class="head">Quietly <em>loud.</em></div>
+                    <div class="lead">A studio for ambitious teams who care about how the work feels.</div>
+                    <div class="btns">
+                      <span class="b">START</span>
+                      <span class="b alt">SEE WORK</span>
+                    </div>
+                  </div>
+                  <div class="img"></div>
+                </div>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li data-i18n="services.s1_f1">UZ · RU · EN trilingual qutidan</li>
+              <li data-i18n="services.s1_f2">Click · Payme onlayn to'lovlar</li>
+              <li data-i18n="services.s1_f3">Lighthouse 98+ kafolatlanadi</li>
+            </ul>
+            <div class="service-foot">
+              <div class="service-price">
+                <div class="label" data-i18n="services.price_label">Boshlang'ich</div>
+                <div class="v"><span class="from" data-i18n="services.price_from">dan</span><span data-i18n="services.s1_price">30 mln so'm</span></div>
+                <div class="timeline" data-i18n="services.s1_timeline">— 4–6 hafta</div>
+              </div>
+              <a href="#contact" class="link-arrow"><span data-i18n="services.quote">Bepul brif buyurtma</span> <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 02 — CRM -->
+          <article class="service reveal-up">
+            <div class="service-num"><span class="n">02</span> <span data-i18n="services.s2_label">CRM Tizim</span></div>
+            <h3>
+              <em data-i18n="services.s2_title_1">Maxsus</em>
+              <span data-i18n="services.s2_title_2">CRM — Excel'ingizni almashtiradi.</span>
+            </h3>
+            <p class="service-desc" data-i18n="services.s2_desc">
+              1C, Excel va Payme to'lovlari — bir tizimda. amoCRM yoki Bitrix24 ga muqobil — sizning real biznes jarayoningizga moslashtirilgan, generic SaaS emas.
+            </p>
+            <div class="service-mockup">
+              <div class="mock-crm">
+                <div class="side">
+                  <div class="logo"></div>
+                  <div class="item active"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <div class="main">
+                  <div class="top">
+                    <h5>Sales pipeline</h5>
+                    <span class="badge">+38% MoM</span>
+                  </div>
+                  <div class="stats">
+                    <div class="stat"><div class="l">MRR</div><div class="v">$2.4M</div></div>
+                    <div class="stat"><div class="l">Leads</div><div class="v">147</div></div>
+                    <div class="stat"><div class="l">Conv</div><div class="v">12.4%</div></div>
+                  </div>
+                  <div class="table">
+                    <div class="row"><div class="av"></div><div class="nm">Aziz K.</div><div class="pr">$24k</div><div class="st green">WON</div></div>
+                    <div class="row"><div class="av"></div><div class="nm">Diyora R.</div><div class="pr">$8.2k</div><div class="st">CALL</div></div>
+                    <div class="row"><div class="av"></div><div class="nm">Bekzod T.</div><div class="pr">$12k</div><div class="st">DEMO</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li data-i18n="services.s2_f1">1C bilan ikki tomonlama sinxron</li>
+              <li data-i18n="services.s2_f2">Telegram bot orqali bildirishnoma</li>
+              <li data-i18n="services.s2_f3">Rolga asoslangan kirish · SSO · audit log</li>
+            </ul>
+            <div class="service-foot">
+              <div class="service-price">
+                <div class="label" data-i18n="services.price_label">Boshlang'ich</div>
+                <div class="v"><span class="from" data-i18n="services.price_from">dan</span><span data-i18n="services.s2_price">80 mln so'm</span></div>
+                <div class="timeline" data-i18n="services.s2_timeline">— 8–14 hafta</div>
+              </div>
+              <a href="#contact" class="link-arrow"><span data-i18n="services.quote">Bepul brif buyurtma</span> <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 03 — Telegram Bot -->
+          <article class="service reveal-up">
+            <div class="service-num"><span class="n">03</span> <span data-i18n="services.s3_label">Telegram Bot</span></div>
+            <h3>
+              <span data-i18n="services.s3_title_1">Telegram bot —</span>
+              <em data-i18n="services.s3_title_2">avtomatik</em>
+              <span data-i18n="services.s3_title_3">sotuv.</span>
+            </h3>
+            <p class="service-desc" data-i18n="services.s3_desc">
+              UZ bozorida buyurtmalarning 50%i Telegram orqali keladi. Biz shu kanalni avtomatlashtiramiz: buyurtma qabul, Click/Payme to'lovlar, CRM bilan sinxron, mini-app. 24/7 sotuv — xodim qatnashmagani holda.
+            </p>
+            <div class="service-mockup">
+              <div class="mock-bot">
+                <div class="bot-header">
+                  <div class="bot-avatar">N</div>
+                  <div class="bot-name">
+                    <b>@northcoffee_bot</b>
+                    <small>online</small>
+                  </div>
+                  <div class="bot-actions">⋮</div>
+                </div>
+                <div class="chat">
+                  <div class="msg bot">Salom! Buyurtma berasizmi? <span class="time">14:02</span></div>
+                  <div class="msg bot">
+                    <span>Mahsulot tanlang:</span>
+                    <div class="btns">
+                      <span class="b">☕ Latte · 25k</span>
+                      <span class="b">🍵 Tea · 15k</span>
+                      <span class="b">🥐 Croissant · 18k</span>
+                      <span class="b">🍰 Cake · 32k</span>
+                    </div>
+                  </div>
+                  <div class="msg user">☕ Latte · 25,000 <span class="check">✓✓</span></div>
+                  <div class="msg bot">Buyurtma: <b>1× Latte</b> · <b>25 000 so'm</b><span class="time">14:03</span></div>
+                  <div class="msg bot">
+                    <div class="btns">
+                      <span class="b pay full">💳 Click bilan to'lash · 25 000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li data-i18n="services.s3_f1">Click · Payme bot ichida to'lov</li>
+              <li data-i18n="services.s3_f2">CRM va 1C bilan real-time sinxron</li>
+              <li data-i18n="services.s3_f3">Mini App · webhooks · admin panel</li>
+            </ul>
+            <div class="service-foot">
+              <div class="service-price">
+                <div class="label" data-i18n="services.price_label">Boshlang'ich</div>
+                <div class="v"><span class="from" data-i18n="services.price_from">dan</span><span data-i18n="services.s3_price">15 mln so'm</span></div>
+                <div class="timeline" data-i18n="services.s3_timeline">— 2–4 hafta</div>
+              </div>
+              <a href="#contact" class="link-arrow"><span data-i18n="services.quote">Bepul brif buyurtma</span> <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 04 — Online store -->
+          <article class="service reveal-up">
+            <div class="service-num"><span class="n">04</span> <span data-i18n="services.s4_label">Onlayn Do'kon</span></div>
+            <h3>
+              <span data-i18n="services.s4_title_1">Onlayn do'konlar va</span>
+              <em data-i18n="services.s4_title_2">tezkor</em>
+              <span data-i18n="services.s4_title_3">checkout.</span>
+            </h3>
+            <p class="service-desc" data-i18n="services.s4_desc">
+              Click, Payme va Uzum BNPL — barcha qutidan. Telegram bot orqali avtomatik buyurtma qabul. Mobil 90% transaksiya — biz mobil-first quramiz.
+            </p>
+            <div class="service-mockup">
+              <div class="mock-store">
+                <div class="top">
+                  <div class="lg">Atlas Goods</div>
+                  <div class="links"><span>SHOP</span><span>JOURNAL</span></div>
+                  <div class="cart">CART · 3</div>
+                </div>
+                <div class="grid">
+                  <div class="prod"><div class="pic p1"></div><div class="nm">Field Tote</div><div class="pr">$84</div></div>
+                  <div class="prod"><div class="pic p2"></div><div class="nm">Coffee Tin</div><div class="pr">$22</div></div>
+                  <div class="prod"><div class="pic p3"></div><div class="nm">Linen Apron</div><div class="pr">$58</div></div>
+                </div>
+                <div class="check">
+                  <span class="total">Subtotal<b>$164.50</b></span>
+                  <span class="btn-c">Checkout</span>
+                </div>
+              </div>
+            </div>
+            <ul class="service-features">
+              <li data-i18n="services.s4_f1">Click · Payme · Uzum BNPL qutidan</li>
+              <li data-i18n="services.s4_f2">Telegram bot orqali buyurtmalar</li>
+              <li data-i18n="services.s4_f3">Mobil-first checkout · Apple/Google Pay</li>
+            </ul>
+            <div class="service-foot">
+              <div class="service-price">
+                <div class="label" data-i18n="services.price_label">Boshlang'ich</div>
+                <div class="v"><span class="from" data-i18n="services.price_from">dan</span><span data-i18n="services.s4_price">45 mln so'm</span></div>
+                <div class="timeline" data-i18n="services.s4_timeline">— 6–10 hafta</div>
+              </div>
+              <a href="#contact" class="link-arrow"><span data-i18n="services.quote">Bepul brif buyurtma</span> <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="services-head">
+          <div class="section-head reveal-up">
+            <span class="kicker" data-i18n="work.kicker">So'nggi ishlar</span>
+            <h2 class="h-1" id="work-title">
+              <span data-i18n="work.title_1">Tanlangan loyihalar,</span><br/>
+              <em class="italic spot" data-i18n="work.title_2">2024–2026</em><span data-i18n="work.title_3">.</span>
+            </h2>
+          </div>
+          <a href="#" class="link-arrow reveal-up" style="align-self: end;"><span data-i18n="work.all">Barcha 47 loyihani ko'rish</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="work-grid">
+          <a href="#" class="work-card reveal-up">
+            <div class="img">
+              <img src="https://picsum.photos/seed/atlas-capital-fintech/900/700" alt="Atlas Capital — sales pipeline rebuild" loading="lazy" width="900" height="700" />
+            </div>
+            <div class="body">
+              <div class="tags" data-i18n="work.c1_tags">CRM · Veb · Fintech</div>
+              <h3 data-i18n="work.c1_title">Atlas Capital — sotuv pipeline qayta tuzilishi</h3>
+              <p class="desc" data-i18n="work.c1_desc">Excel jadvallaridan 1C-sinxronlashgan CRM ga, 9 hafta.</p>
+              <div class="footer">
+                <span class="metric" data-i18n="work.c1_metric">+147% pipeline ko'rinishi</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="work-card reveal-up">
+            <div class="img">
+              <img src="https://picsum.photos/seed/north-coffee-storefront/900/700" alt="North Coffee — Click and Telegram online sales" loading="lazy" width="900" height="700" />
+            </div>
+            <div class="body">
+              <div class="tags" data-i18n="work.c2_tags">Onlayn do'kon · Telegram bot</div>
+              <h3 data-i18n="work.c2_title">North Coffee — Click+Telegram bilan onlayn sotuv</h3>
+              <p class="desc" data-i18n="work.c2_desc">Hydrogen storefront. Telegram bot orqali avtomatik buyurtma. Click, Payme va Uzum BNPL qutidan.</p>
+              <div class="footer">
+                <span class="metric" data-i18n="work.c2_metric">+38% konversiya o'sishi</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="work-card reveal-up">
+            <div class="img">
+              <img src="https://picsum.photos/seed/lumen-health-clinic/900/700" alt="Lumen Health — clinic website with Telegram booking bot" loading="lazy" width="900" height="700" />
+            </div>
+            <div class="body">
+              <div class="tags" data-i18n="work.c3_tags">Mobil ilova · Healthcare</div>
+              <h3 data-i18n="work.c3_title">Lumen Health — 22 klinika boshqaruv ilovasi</h3>
+              <p class="desc" data-i18n="work.c3_desc">React Native ilova. Eskiz orqali SMS bildirishnomalar. 1C bilan integratsiya.</p>
+              <div class="footer">
+                <span class="metric" data-i18n="work.c3_metric">22 ta klinika ishlamoqda</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="kicker" data-i18n="process.kicker">Qanday ishlaymiz</span>
+          <h2 class="h-1" id="process-title">
+            <span data-i18n="process.title_1">Boshlanishdan ishga tushishgacha,</span><br/>
+            <em class="italic spot" data-i18n="process.title_2">12 hafta</em> <span data-i18n="process.title_3">ichida.</span>
+          </h2>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal-up">
+            <div class="num">01</div>
+            <h3 data-i18n="process.p1_title">O'rganish</h3>
+            <p data-i18n="process.p1_desc">Stakeholder qo'ng'iroqlari, mavjud 1C/Excel auditi va yozma scope.</p>
+            <div class="deliv"><b data-i18n="process.p1_deliv_w">1-hafta</b> · <span data-i18n="process.p1_deliv">Scope va fixed-price SOW</span></div>
+          </div>
+          <div class="step reveal-up">
+            <div class="num">02</div>
+            <h3 data-i18n="process.p2_title">Dizayn</h3>
+            <p data-i18n="process.p2_desc">Figma prototiplar, motion spetslar va har bir ekran uchun preview.</p>
+            <div class="deliv"><b data-i18n="process.p2_deliv_w">2–4-haftalar</b> · <span data-i18n="process.p2_deliv">Figma prototip</span></div>
+          </div>
+          <div class="step spot reveal-up">
+            <div class="num">03</div>
+            <h3 data-i18n="process.p3_title">Qurilish</h3>
+            <p data-i18n="process.p3_desc">Ikki haftalik sprintlar, har haftalik demo, birinchi haftadan privat staging URL.</p>
+            <div class="deliv"><b data-i18n="process.p3_deliv_w">4–10-haftalar</b> · <span data-i18n="process.p3_deliv">Staging build</span></div>
+          </div>
+          <div class="step reveal-up">
+            <div class="num">04</div>
+            <h3 data-i18n="process.p4_title">Ishga tushirish</h3>
+            <p data-i18n="process.p4_desc">Production deploy, monitoring sozlash va 30 kunlik post-launch yordami.</p>
+            <div class="deliv"><b data-i18n="process.p4_deliv_w">10–12-haftalar</b> · <span data-i18n="process.p4_deliv">Production · 99.9% SLA</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial-wrap" aria-label="Mijoz fikri">
+      <div class="container">
+        <div class="testimonial">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <div>
+            <blockquote>
+              <span data-i18n="testimonial.quote_1">Avvalgi agent 6 oy davomida WordPress'da "CRM" yasamoqda edi. Forge</span>
+              <em data-i18n="testimonial.quote_em">9 hafta ichida 1C bilan to'liq sinxronlashgan tizim</em><span data-i18n="testimonial.quote_2"> qildi. Bitta Excel jadvali ham yo'qolmagan.</span>
+            </blockquote>
+            <div class="author">
+              <div class="av" aria-hidden="true">AK</div>
+              <div>
+                <div class="name" data-i18n="testimonial.name">Aziz Karimov</div>
+                <div class="role" data-i18n="testimonial.role">COO, Atlas Capital</div>
+              </div>
+              <div class="logo" aria-hidden="true">Atlas·</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section" aria-labelledby="stats-title">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="kicker" data-i18n="stats.kicker">Raqamlarda</span>
+          <h2 class="h-1" id="stats-title">
+            <span data-i18n="stats.title_1">Halol o'lchovlar,</span><br/>
+            <em class="italic spot" data-i18n="stats.title_2">oddiy holatda</em><span data-i18n="stats.title_3">.</span>
+          </h2>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card reveal-up">
+            <div class="num">47<em>↗</em></div>
+            <div class="label" data-i18n="stats.s1_label">Yetkazilgan loyihalar</div>
+            <div class="desc" data-i18n="stats.s1_desc">studiya 2024 yilda ochilganidan beri.</div>
+          </div>
+          <div class="stat-card reveal-up">
+            <div class="num">12</div>
+            <div class="label" data-i18n="stats.s2_label">Soha</div>
+            <div class="desc" data-i18n="stats.s2_desc">fintech, retail, klinika, restoran va boshqalar.</div>
+          </div>
+          <div class="stat-card reveal-up">
+            <div class="num">100<em>%</em></div>
+            <div class="label" data-i18n="stats.s3_label">O'z vaqtida yetkazib berish</div>
+            <div class="desc" data-i18n="stats.s3_desc">imzolangan SOW ga qarshi o'lchanadi.</div>
+          </div>
+          <div class="stat-card reveal-up">
+            <div class="num">99.9<em>%</em></div>
+            <div class="label" data-i18n="stats.s4_label">Uptime SLA</div>
+            <div class="desc" data-i18n="stats.s4_desc">Pingdom tomonidan 24 oy davomida o'lchangan.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-wrap" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal-up" style="text-align: center; margin-left: auto; margin-right: auto;">
+          <span class="kicker" data-i18n="faq.kicker">Tez-tez so'raladigan savollar</span>
+          <h2 class="h-1" id="faq-title">
+            <span data-i18n="faq.title_1">Birinchi qo'ng'iroqdan oldin</span><br/>
+            <em class="italic spot" data-i18n="faq.title_2">javoblar</em><span data-i18n="faq.title_3">.</span>
+          </h2>
+        </div>
+
+        <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q1">Click, Payme va boshqa to'lov tizimlari bilan ishlaysizmi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a1">Ha, default'da. Click, Payme, Uzcard, Humo, Uzum BNPL va Stripe — har bir loyihaga qo'shilgan, qo'shimcha to'lovsiz.</span>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q2">1C bilan integratsiya qilasizmi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a2">Ha. Bizning CRM yechimlarimiz 1C bilan ikki tomonlama, real-time sinxron.</span>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q3">Loyiha qancha vaqt davom etadi va narxlar fixed bo'ladimi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a3">Marketing sayt — 4–6 hafta. CRM — 8–14 hafta. Mobil ilova — 10–16 hafta. Discovery dan keyin yozma SOW va fixed price.</span>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q4">Faqat Toshkent bo'yicha ishlaysizmi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a4">Yo'q. Toshkent, Dubay va Almatida 47 mijozimiz bor. Loyiha to'liq remote bo'lishi mumkin.</span>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q5">WordPress yoki tayyor template ishlatasizmi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a5">Yo'q. Har bir loyiha 0 dan yoziladi. Tayyor template'lar 6 oydan keyin sinadi — biz yillab ishlaydigan kod yozamiz.</span>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q6">Loyiha tugagandan keyin yordam beriladimi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a6">Ha. 30 kunlik post-launch yordami har bir loyihaga qo'shilgan — bug-fix, monitoring, hot-fix.</span>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary>
+              <span itemprop="name" data-i18n="faq.q7">Telegram bot ham yasaysizmi? Mini App-chi?</span>
+              <span class="toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text" data-i18n="faq.a7">Telegram bot — bizning asosiy xizmatlarimizdan biri. Buyurtma qabul boti, Click/Payme to'lovlar bot ichida, CRM/1C bilan sinxron, mini-app, admin panel. Botlar odatda 2–4 hafta ichida tayyor bo'ladi. Sayt bilan birga buyurtma berilsa — sayt + bot bitta paketda chegirma bilan.</span>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + FORM -->
+    <section class="container" id="contact" aria-labelledby="contact-title">
+      <div class="cta">
+        <div class="cta-grid">
+          <div class="reveal-up" id="pricing">
+            <span class="kicker" style="margin-bottom: 18px; display: inline-flex;" data-i18n="cta.kicker">Q3 2026 ga buyurtma qabul qilamiz</span>
+            <h2 id="contact-title">
+              <span data-i18n="cta.title_1">Loyiha bormi?</span><br/>
+              <em data-i18n="cta.title_2">Gaplashamiz</em><span data-i18n="cta.title_3">.</span>
+            </h2>
+            <p class="body-lg" style="max-width: 480px; margin-bottom: 0;" data-i18n="cta.lead">
+              Jamoangiz, vaqtingiz va hal qilmoqchi bo'lgan muammoyingiz haqida gapiring. Studio soatlarida 3 soat ichida javob beramiz.
+            </p>
+
+            <div class="direct-contacts">
+              <a href="tel:+998901234567" aria-label="Telefon orqali aloqa">
+                <span class="ic" aria-hidden="true">☎</span>
+                <div>
+                  <div class="l" data-i18n="cta.call_label">Bevosita qo'ng'iroq</div>
+                  <b>+998 90 123 45 67</b>
+                </div>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://t.me/forge_studio" target="_blank" rel="noopener" aria-label="Telegram orqali aloqa">
+                <span class="ic" aria-hidden="true">✈</span>
+                <div>
+                  <div class="l" data-i18n="cta.tg_label">Telegram</div>
+                  <b>@forge_studio</b>
+                </div>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal-up" id="callbackForm" novalidate aria-label="Qo'ng'iroq buyurtma formasi">
+            <div class="form-head">
+              <span class="pill" data-i18n="form.pill">Q3 2026 — Bo'sh joy bor</span>
+              <h3 data-i18n="form.title">Bepul konsultatsiya</h3>
+              <p data-i18n="form.lead">Telefoningizni qoldiring — 3 soat ichida qo'ng'iroq qilamiz.</p>
+            </div>
+
+            <label>
+              <span class="l"><span data-i18n="form.name_l">Ismingiz</span> <span class="req" data-i18n="form.name_req">*</span></span>
+              <input type="text" name="name" required data-i18n-attr="placeholder:form.name_ph" placeholder="Aziz Karimov" autocomplete="name" />
+            </label>
+
+            <label>
+              <span class="l"><span data-i18n="form.phone_l">Telefon</span> <span class="req" data-i18n="form.phone_req">*</span></span>
+              <div class="phone-input">
+                <span class="prefix">+998</span>
+                <input type="tel" name="phone" required pattern="[0-9 \-]+" inputmode="numeric" data-i18n-attr="placeholder:form.phone_ph" placeholder="90 123 45 67" autocomplete="tel-national" />
+              </div>
+            </label>
+
+            <label>
+              <span class="l" data-i18n="form.service_l">Sizga qaysi xizmat kerak</span>
+              <select name="service">
+                <option value="" data-i18n="form.service_ph">Tanlang...</option>
+                <option value="website" data-i18n="form.service_o1">Veb-sayt</option>
+                <option value="crm" data-i18n="form.service_o2">CRM tizim</option>
+                <option value="app" data-i18n="form.service_o3">Biznes ilova</option>
+                <option value="store" data-i18n="form.service_o4">Onlayn do'kon</option>
+                <option value="other" data-i18n="form.service_o5">Hali aniqlamadim</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="l" data-i18n="form.msg_l">Loyiha haqida (ixtiyoriy)</span>
+              <textarea name="message" rows="3" data-i18n-attr="placeholder:form.msg_ph" placeholder="Hozir qaysi tizimda ishlaysiz? Nima muammo?"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary">
+              <span data-i18n="form.submit">Qo'ng'iroq buyurtma berish</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+
+            <p class="form-note">
+              <span data-i18n="form.note_1">Yuborish orqali siz </span><a href="#" data-i18n="form.note_link">maxfiylik siyosati</a><span data-i18n="form.note_2">miz bilan rozi bo'lasiz.</span>
+            </p>
+
+            <div class="form-success" role="status" aria-live="polite">
+              <div class="ic" aria-hidden="true">✓</div>
+              <h3 data-i18n="form.success_t">Rahmat!</h3>
+              <p data-i18n="form.success_p">Tez orada qo'ng'iroq qilamiz. Studio soatlarida — 3 soatdan ortiq emas.</p>
+              <a href="#" class="reset" data-i18n="form.success_reset">Yana xabar yuborish</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="brand" aria-label="Forge — bosh sahifa">
+            <span class="brand-mark"><span>F</span></span>
+            Forge
+          </a>
+          <p class="tag" data-i18n="footer.tag">Toshkentda joylashgan IT studiya. Click, Payme va 1C bilan default integratsiyalashgan.</p>
+          <form class="newsletter" id="newsForm" aria-label="Yangiliklarga obuna">
+            <input type="email" required data-i18n-attr="placeholder:footer.news_ph" placeholder="siz@kompaniyangiz.uz" aria-label="Email" />
+            <button type="submit" data-i18n="footer.news_btn">Obuna bo'lish</button>
+          </form>
+        </div>
+        <div>
+          <h4 data-i18n="footer.h_services">Xizmatlar</h4>
+          <ul>
+            <li><a href="#services" data-i18n="footer.l_websites">Veb-saytlar</a></li>
+            <li><a href="#services" data-i18n="footer.l_crm">CRM tizimlar</a></li>
+            <li><a href="#services" data-i18n="footer.l_apps">Biznes ilovalar</a></li>
+            <li><a href="#services" data-i18n="footer.l_stores">Onlayn do'konlar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.h_studio">Studiya</h4>
+          <ul>
+            <li><a href="#work" data-i18n="footer.l_work">Ishlar</a></li>
+            <li><a href="#process" data-i18n="footer.l_process">Jarayon</a></li>
+            <li><a href="#pricing" data-i18n="footer.l_pricing">Narxlar</a></li>
+            <li><a href="#contact" data-i18n="footer.l_contact">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.h_reach">Aloqa</h4>
+          <ul>
+            <li><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+            <li><a href="https://t.me/forge_studio" rel="noopener">Telegram</a></li>
+            <li><a href="#" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 Forge Studio · Barcha huquqlar himoyalangan</span>
+        <span data-i18n="footer.made">Maxfiylik · Foydalanish · Toshkentda yaratilgan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

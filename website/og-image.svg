@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0E1729" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="85%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#E94B36" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#E94B36" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="botbubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8F4ED"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#F8F4ED"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Brand mark -->
+  <g transform="translate(80, 80)">
+    <rect width="60" height="60" rx="13" fill="#0E1729"/>
+    <rect x="9" y="9" width="42" height="42" rx="7" fill="none" stroke="#E94B36" stroke-width="3"/>
+    <text x="30" y="42" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#F8F4ED">F</text>
+    <text x="80" y="42" font-family="Georgia, serif" font-weight="700" font-size="38" fill="#0E1729" letter-spacing="-1">Forge</text>
+  </g>
+
+  <!-- Main headline -->
+  <g transform="translate(80, 230)">
+    <text font-family="Georgia, serif" font-weight="700" font-size="84" fill="#0E1729" letter-spacing="-3">
+      <tspan x="0" dy="0">Veb-sayt va</tspan>
+      <tspan x="0" dy="92">Telegram bot —</tspan>
+      <tspan x="0" dy="92" fill="#E94B36" font-style="italic" font-weight="500">bitta paketda.</tspan>
+    </text>
+  </g>
+
+  <!-- Mock telegram bubble decoration -->
+  <g transform="translate(820, 230)" opacity="0.95">
+    <rect width="280" height="60" rx="16" fill="url(#botbubble)" stroke="#E5DCC8" stroke-width="1.5"/>
+    <circle cx="32" cy="30" r="14" fill="#E94B36"/>
+    <text x="32" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#FFFFFF">N</text>
+    <text x="56" y="26" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#0E1729">@northcoffee_bot</text>
+    <text x="56" y="44" font-family="ui-monospace, monospace" font-size="11" fill="#7E7567">800 buyurtma · kunlik</text>
+
+    <rect y="78" width="180" height="40" rx="10" fill="#E94B36"/>
+    <text x="90" y="103" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" font-weight="600" fill="#FFFFFF">💳 Click bilan to'lash</text>
+  </g>
+
+  <!-- Trust strip -->
+  <g transform="translate(80, 540)">
+    <text font-family="ui-monospace, monospace" font-size="16" fill="#6E7587" letter-spacing="3">
+      CLICK · PAYME · UZCARD · HUMO · 1C · TELEGRAM
+    </text>
+  </g>
+
+  <!-- Tag right side -->
+  <g transform="translate(1120, 88)" text-anchor="end">
+    <text font-family="ui-monospace, monospace" font-size="14" fill="#6E7587" letter-spacing="3">
+      TASHKENT · UZ
+    </text>
+  </g>
+</svg>
