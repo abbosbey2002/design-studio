@@ -20,9 +20,9 @@
       padding: 48px 0;
       border-top: 1px solid var(--line);
       align-items: start;
-      cursor: pointer;
-      transition: background 0.4s;
+      transition: background 0.4s, padding-left 0.5s var(--ease-out-expo);
     }
+    .service-row:hover { padding-left: 16px; }
     .service-row:last-child { border-bottom: 1px solid var(--line); }
     .service-row:hover { background: rgba(255,74,28,0.03); }
     .service-row .num { font-family: var(--font-display); font-size: 28px; color: var(--accent); font-weight: 500; }
@@ -118,7 +118,7 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta" data-nav-theme="dark">
       <div class="cta-shape" data-parallax="-0.2"></div>
       <div class="container cta-content">
         <p class="eyebrow reveal-up" style="color: rgba(245,244,240,0.5); margin-bottom: 32px;" data-i18n="cta.kicker">Got a project?</p>
@@ -138,7 +138,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-nav-theme="dark">
     <div class="container">
       <div class="footer-grid">
         <div>

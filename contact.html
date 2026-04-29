@@ -101,7 +101,7 @@
       <div class="container">
         <div class="contact-grid">
 
-          <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we\\'ll be in touch soon.');">
+          <form class="contact-form" id="contactForm">
             <div class="field">
               <label>Your name</label>
               <input type="text" placeholder="Jane Doe" required />
@@ -162,7 +162,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-nav-theme="dark">
     <div class="container">
       <div class="footer-grid">
         <div>
@@ -193,6 +193,21 @@
         document.querySelectorAll('.budget-options button').forEach((x) => x.classList.remove('active'));
         b.classList.add('active');
       });
+    });
+
+    // Form submission — uses the global toast helper
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fire = () => window.studio?.toast?.({
+        title: 'Brief received',
+        message: "We'll be in touch within 24 hours.",
+        icon: '✓',
+      });
+      // toast may load slightly after — give it a tick on slow networks
+      if (window.studio?.toast) fire();
+      else setTimeout(fire, 200);
+      e.target.reset();
+      document.querySelectorAll('.budget-options button').forEach((x) => x.classList.remove('active'));
     });
   </script>
   <script type="module" src="./js/main.js"></script>

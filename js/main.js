@@ -6,6 +6,12 @@ import { initMarquee } from './modules/marquee.js';
 import { initI18n } from './modules/i18n.js';
 import { initSmoothScroll } from './modules/smoothScroll.js';
 import { initPageTransitions } from './modules/pageTransitions.js';
+import { initNav } from './modules/nav.js';
+import { showToast } from './modules/toast.js';
+
+// Expose toast globally for inline scripts (e.g. contact form)
+window.studio = window.studio || {};
+window.studio.toast = showToast;
 
 async function init() {
   // Register GSAP plugins if loaded
@@ -15,6 +21,7 @@ async function init() {
 
   await initI18n();
   initSmoothScroll();
+  initNav();
   initCursor();
   initSplitTextReveals();
   initParallax();

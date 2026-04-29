@@ -35,14 +35,16 @@
       border-radius: 4px;
       margin-bottom: 20px;
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-display);
-      font-size: 80px;
-      font-weight: 500;
-      color: var(--bg);
+      position: relative;
     }
+    .team-card .photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 1s var(--ease-out-expo);
+      filter: grayscale(0.15) contrast(1.05);
+    }
+    .team-card:hover .photo img { transform: scale(1.04); }
     .team-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 500; }
     .team-card p { font-size: 14px; color: var(--muted); margin-top: 4px; }
     @media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } }
@@ -123,17 +125,23 @@
 
         <div class="team-grid">
           <div class="team-card reveal-up">
-            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);">A</div>
+            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);">
+              <img src="https://picsum.photos/seed/abdukarim-portrait/900/1200" alt="Portrait of Abdukarim Q., Founder & Design Director" loading="lazy" />
+            </div>
             <h3>Abdukarim Q.</h3>
             <p>Founder, Design Director</p>
           </div>
           <div class="team-card reveal-up">
-            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #FF4A1C 0%, #C73314 100%);">M</div>
+            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #FF4A1C 0%, #C73314 100%);">
+              <img src="https://picsum.photos/seed/maya-designer-portrait/900/1200" alt="Portrait of Maya R., Senior Designer" loading="lazy" />
+            </div>
             <h3>Maya R.</h3>
             <p>Senior Designer</p>
           </div>
           <div class="team-card reveal-up">
-            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #2D4A3E 0%, #1A2E26 100%);">D</div>
+            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #2D4A3E 0%, #1A2E26 100%);">
+              <img src="https://picsum.photos/seed/daniel-engineer-portrait/900/1200" alt="Portrait of Daniel I., Engineering Lead" loading="lazy" />
+            </div>
             <h3>Daniel I.</h3>
             <p>Engineering Lead</p>
           </div>
@@ -142,7 +150,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta">
+    <section class="cta" data-nav-theme="dark">
       <div class="cta-shape" data-parallax="-0.2"></div>
       <div class="container cta-content">
         <p class="eyebrow reveal-up" style="color: rgba(245,244,240,0.5); margin-bottom: 32px;" data-i18n="cta.kicker">Got a project?</p>
@@ -162,7 +170,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-nav-theme="dark">
     <div class="container">
       <div class="footer-grid">
         <div>
