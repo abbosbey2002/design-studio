@@ -38,24 +38,58 @@ export function initParallax() {
   update();
 }
 
-// Image reveal — clip-path based
+// Image reveal — clip-path based.
+// Applies the clip to the INNER image/fill so the wrapper's gradient bg stays
+// visible even if the observer (or the image itself) never fires.
 export function initImageReveal() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const items = document.querySelectorAll('[data-reveal-image]');
+  if (!items.length) return;
+
+  const targets = new Map(); // wrapper -> inner element to clip
   items.forEach((el) => {
-    el.style.clipPath = 'inset(100% 0 0 0)';
-    el.style.transition = 'clip-path 1.4s cubic-bezier(0.76, 0, 0.24, 1)';
+    const inner =
+      el.querySelector('img, .work-media-fill, .full-bleed-fill') || el;
+    inner.style.clipPath = 'inset(100% 0 0 0)';
+    inner.style.willChange = 'clip-path';
+    inner.style.transition = 'clip-path 1.4s cubic-bezier(0.76, 0, 0.24, 1)';
+    targets.set(el, inner);
+
+    // If an <img> errors out (e.g. picsum offline), drop it so the gradient bg shows.
+    if (inner.tagName === 'IMG') {
+      inner.addEventListener('error', () => {
+        inner.style.display = 'none';
+      }, { once: true });
+    }
   });
+
+  const reveal = (wrapper) => {
+    const t = targets.get(wrapper);
+    if (t) t.style.clipPath = 'inset(0 0 0 0)';
+  };
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.style.clipPath = 'inset(0 0 0 0)';
+        reveal(entry.target);
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.15, rootMargin: '0px 0px -5% 0px' });
 
   items.forEach((el) => io.observe(el));
+
+  // Safety net: if the IO somehow misses an element that's already on-screen
+  // by the time JS finishes booting, force-reveal anything visible.
+  requestAnimationFrame(() => {
+    items.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      const inView = r.top < window.innerHeight && r.bottom > 0;
+      if (inView) {
+        reveal(el);
+        io.unobserve(el);
+      }
+    });
+  });
 }
