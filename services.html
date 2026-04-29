@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Studio Abdukarim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <style>
+    .service-row {
+      display: grid;
+      grid-template-columns: 60px 1fr 2fr 1fr;
+      gap: 32px;
+      padding: 48px 0;
+      border-top: 1px solid var(--line);
+      align-items: start;
+      cursor: pointer;
+      transition: background 0.4s;
+    }
+    .service-row:last-child { border-bottom: 1px solid var(--line); }
+    .service-row:hover { background: rgba(255,74,28,0.03); }
+    .service-row .num { font-family: var(--font-display); font-size: 28px; color: var(--accent); font-weight: 500; }
+    .service-row h3 { font-family: var(--font-display); font-size: clamp(28px, 3vw, 48px); font-weight: 500; letter-spacing: -0.02em; line-height: 1.05; }
+    .service-row p { color: var(--muted); font-size: 16px; }
+    .service-row ul { list-style: none; font-size: 14px; color: var(--ink-soft); }
+    .service-row ul li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+    .service-row ul li:last-child { border-bottom: none; }
+    @media (max-width: 1024px) {
+      .service-row { grid-template-columns: 40px 1fr; }
+      .service-row p, .service-row ul { grid-column: 2; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="./index.html" class="logo" data-magnetic="0.2">Studio Abdukarim</a>
+    <nav>
+      <a href="./work.html" data-i18n="nav.work">Work</a>
+      <a href="./services.html" class="nav-link-hide-mobile" data-i18n="nav.services">Services</a>
+      <a href="./about.html" class="nav-link-hide-mobile" data-i18n="nav.about">About</a>
+      <a href="./contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="lang-toggle">
+        <button data-lang="uz">UZ</button><span style="opacity:0.4">/</span><button data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section style="padding: 200px 0 120px;">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="margin-bottom: 32px;">What we do · Four practices</p>
+        <h1 class="h-display"><span data-split="lines" data-reveal-on-load data-i18n="page.services_title">Services</span></h1>
+        <p class="body-lg reveal-up" style="max-width: 640px; margin-top: 40px;" data-i18n="page.services_lead">
+          Four practice areas, one studio. Most engagements blend two or more.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container">
+
+        <div class="service-row reveal-up">
+          <div class="num">01</div>
+          <h3>Brand Identity</h3>
+          <p>Logo systems, typography, color, voice — the visual and verbal language that makes a brand recognizable across every surface.</p>
+          <ul>
+            <li>Logo & wordmark</li>
+            <li>Typography systems</li>
+            <li>Brand guidelines</li>
+            <li>Editorial direction</li>
+          </ul>
+        </div>
+
+        <div class="service-row reveal-up">
+          <div class="num">02</div>
+          <h3>Web Design & Build</h3>
+          <p>Marketing sites, product landing pages, editorial platforms. Designed and built end-to-end with performance and craft in mind.</p>
+          <ul>
+            <li>Marketing sites</li>
+            <li>Landing pages</li>
+            <li>Headless CMS setup</li>
+            <li>Performance audits</li>
+          </ul>
+        </div>
+
+        <div class="service-row reveal-up">
+          <div class="num">03</div>
+          <h3>Product UI · UX</h3>
+          <p>Dashboards, mobile apps, complex flows. We work alongside product and engineering to ship interfaces users actually love.</p>
+          <ul>
+            <li>UX research & flows</li>
+            <li>Design systems</li>
+            <li>Prototyping</li>
+            <li>Handoff & QA</li>
+          </ul>
+        </div>
+
+        <div class="service-row reveal-up">
+          <div class="num">04</div>
+          <h3>Motion & Art Direction</h3>
+          <p>Type animation, scroll choreography, interaction motion. The connective tissue that makes a static design feel alive.</p>
+          <ul>
+            <li>Motion principles</li>
+            <li>Scroll experiences</li>
+            <li>Brand films</li>
+            <li>Launch campaigns</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-shape" data-parallax="-0.2"></div>
+      <div class="container cta-content">
+        <p class="eyebrow reveal-up" style="color: rgba(245,244,240,0.5); margin-bottom: 32px;" data-i18n="cta.kicker">Got a project?</p>
+        <h2>
+          <span data-split="lines" data-reveal-on-scroll data-i18n="cta.title_l1">Let's build</span><br/>
+          <span data-split="lines" data-reveal-on-scroll data-i18n="cta.title_l2">something</span><br/>
+          <span data-split="lines" data-reveal-on-scroll class="accent" data-i18n="cta.title_l3">memorable.</span>
+        </h2>
+        <div style="margin-top: 64px;">
+          <a href="./contact.html" class="btn" style="background: var(--bg); color: var(--ink);" data-magnetic="0.25">
+            <span data-i18n="cta.button">Start a project</span>
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo font-display" style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Studio Abdukarim</div>
+          <p style="color: rgba(245,244,240,0.6); max-width: 320px;" data-i18n="footer.tagline">An independent studio, by appointment only.</p>
+        </div>
+        <div><h4 data-i18n="footer.studio">Studio</h4><ul>
+          <li><a href="./about.html" data-i18n="footer.about">About</a></li>
+        </ul></div>
+        <div><h4 data-i18n="footer.work_h">Work</h4><ul>
+          <li><a href="./work.html" data-i18n="footer.case_studies">Case Studies</a></li>
+        </ul></div>
+        <div><h4 data-i18n="footer.contact_h">Contact</h4><ul>
+          <li><a href="mailto:hello@studio-abdukarim.com">hello@studio-abdukarim.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 Studio Abdukarim. All rights reserved.</span>
+        <span data-i18n="footer.made">Designed & built in-house</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

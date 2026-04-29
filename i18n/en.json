@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Independent Design Studio · Est. 2024",
+    "title_l1": "We design",
+    "title_l2": "interfaces that",
+    "title_l3": "feel inevitable.",
+    "lead": "Studio Abdukarim is a small design practice crafting brand systems, websites and digital products for ambitious teams across the globe.",
+    "meta_based": "Based in",
+    "meta_based_v": "Tashkent · Remote",
+    "meta_clients": "Working with",
+    "meta_clients_v": "Founders, agencies & Fortune 500",
+    "meta_status": "Status",
+    "meta_status_v": "Booking Q3 2026",
+    "scroll": "Scroll to begin"
+  },
+  "marquee": {
+    "items": "Brand Systems / Web Design / UI · UX / Motion / Identity / Editorial / Product / Art Direction"
+  },
+  "manifesto": {
+    "eyebrow": "Manifesto",
+    "text": "We don't chase trends. We build <em>quiet, considered work</em> that respects the reader, sells the product and outlasts the season. Every pixel earns its place. Every interaction has a reason. Anything else is noise."
+  },
+  "work": {
+    "eyebrow": "Selected Work",
+    "title": "Recent projects",
+    "lead": "A small selection of brand and digital work shipped in 2024–2026.",
+    "view_all": "View all work",
+    "items": {
+      "atlas": { "name": "Atlas Capital", "tags": "Brand · Web · 2026" },
+      "north": { "name": "North Coffee Co.", "tags": "Identity · Packaging · 2025" },
+      "lumen": { "name": "Lumen Health", "tags": "Product · UI · 2025" },
+      "field": { "name": "Field Notes", "tags": "Editorial · 2025" },
+      "orbit": { "name": "Orbit Studio", "tags": "Brand · Motion · 2024" },
+      "praxis": { "name": "Praxis Journal", "tags": "Web · Editorial · 2024" }
+    }
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "A four-step practice",
+    "items": [
+      { "title": "Discover", "body": "Workshops, audits and stakeholder interviews. We name the problem before we touch a sketch." },
+      { "title": "Design", "body": "Concepts, systems and prototypes. We iterate quickly, then slow down to perfect the details." },
+      { "title": "Develop", "body": "Production-grade build with our partners. Tailwind, GSAP, headless CMS — whatever fits." },
+      { "title": "Deliver", "body": "Launch support, documentation and a system your team can grow into for years." }
+    ]
+  },
+  "testimonial": {
+    "eyebrow": "Kind words",
+    "quote": "They behave like a second design team — calm, opinionated, and genuinely invested in the outcome. Our launch metrics speak for themselves.",
+    "author": "Sarah Chen",
+    "role": "Head of Brand, Atlas Capital"
+  },
+  "cta": {
+    "kicker": "Got a project?",
+    "title_l1": "Let's build",
+    "title_l2": "something",
+    "title_l3": "memorable.",
+    "lead": "Tell us about your team, your timeline, and the problem you're trying to solve.",
+    "button": "Start a project"
+  },
+  "footer": {
+    "tagline": "An independent studio, by appointment only.",
+    "studio": "Studio",
+    "about": "About",
+    "process": "Process",
+    "careers": "Careers",
+    "work_h": "Work",
+    "case_studies": "Case Studies",
+    "archive": "Archive",
+    "contact_h": "Contact",
+    "email": "hello@studio-abdukarim.com",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "social": "Social",
+    "linkedin": "LinkedIn",
+    "behance": "Behance",
+    "rights": "© 2026 Studio Abdukarim. All rights reserved.",
+    "made": "Designed & built in-house"
+  },
+  "page": {
+    "work_title": "Work",
+    "work_lead": "A complete archive of work shipped since the studio's founding.",
+    "services_title": "Services",
+    "services_lead": "Four practice areas, one studio. Most engagements blend two or more.",
+    "about_title": "About",
+    "about_lead": "A small, founder-led studio focused on long-term partnerships over headcount.",
+    "contact_title": "Get in touch",
+    "contact_lead": "We respond to every inquiry within 24 hours."
+  }
+}

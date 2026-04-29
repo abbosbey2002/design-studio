@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Capital — Studio Abdukarim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <style>
+    .case-hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 160px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .case-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding-top: 48px;
+      margin-top: 64px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 768px) { .case-meta-grid { grid-template-columns: 1fr 1fr; gap: 32px 24px; } }
+    .case-meta-grid .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .case-meta-grid .value { font-size: 15px; }
+
+    .full-bleed {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--ink);
+    }
+    .full-bleed-fill {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: clamp(60px, 12vw, 200px); color: rgba(255,74,28,0.4);
+      font-weight: 500;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    @media (max-width: 1024px) { .two-col { grid-template-columns: 1fr; gap: 48px; } }
+
+    .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .stat-row .num { font-family: var(--font-display); font-size: clamp(56px, 7vw, 120px); font-weight: 500; letter-spacing: -0.03em; line-height: 1; color: var(--accent); }
+    .stat-row .label { margin-top: 16px; font-size: 14px; color: var(--muted); }
+    @media (max-width: 768px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .next-project {
+      padding: clamp(80px, 12vw, 160px) 0;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo" data-magnetic="0.2">Studio Abdukarim</a>
+    <nav>
+      <a href="../work.html" data-i18n="nav.work">Work</a>
+      <a href="../services.html" class="nav-link-hide-mobile" data-i18n="nav.services">Services</a>
+      <a href="../about.html" class="nav-link-hide-mobile" data-i18n="nav.about">About</a>
+      <a href="../contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="lang-toggle">
+        <button data-lang="uz">UZ</button><span style="opacity:0.4">/</span><button data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="case-hero">
+      <div class="hero-shape" data-parallax="-0.3"></div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal-up" style="margin-bottom: 32px;">Case Study · 01 of 06</p>
+        <h1 class="h-display">
+          <span data-split="lines" data-reveal-on-load>Atlas Capital</span>
+        </h1>
+        <p class="body-lg reveal-up" style="max-width: 720px; margin-top: 32px;">
+          A complete brand and digital reset for a $2B asset manager. Quiet, confident and built to last a decade.
+        </p>
+        <div class="case-meta-grid reveal-up">
+          <div><div class="label">Client</div><div class="value">Atlas Capital Partners</div></div>
+          <div><div class="label">Year</div><div class="value">2026</div></div>
+          <div><div class="label">Services</div><div class="value">Brand · Web · Editorial</div></div>
+          <div><div class="label">Industry</div><div class="value">Financial Services</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero image -->
+    <section style="padding-bottom: clamp(80px, 12vw, 160px);">
+      <div class="full-bleed" data-reveal-image>
+        <div class="full-bleed-fill">A</div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="eyebrow reveal-up" style="margin-bottom: 24px;">The brief</p>
+            <h2 class="h-2 reveal-up">A new identity for the next decade.</h2>
+          </div>
+          <div>
+            <p class="body-lg reveal-up" style="margin-bottom: 24px;">
+              Atlas approached us after their fifteenth anniversary feeling like the brand no longer reflected the firm. The old visual language — heavy serif logo, navy and gold palette — felt like every other asset manager.
+            </p>
+            <p class="body-lg reveal-up">
+              We built a quieter, more confident system: a custom typographic logo, a single accent color, and a website that puts the work and the people front-and-center.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image grid -->
+    <section class="section section-sm">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div class="work-media" data-reveal-image style="aspect-ratio: 1/1;">
+            <div class="work-media-fill" style="background: linear-gradient(135deg, #FF4A1C 0%, #C73314 100%);">01</div>
+          </div>
+          <div class="work-media" data-reveal-image style="aspect-ratio: 1/1;">
+            <div class="work-media-fill" style="background: linear-gradient(135deg, #2A2A2A 0%, #0A0A0A 100%);">02</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="section">
+      <div class="container">
+        <blockquote class="testimonial-quote" style="max-width: 1100px;">
+          <span data-split="words" data-reveal-on-scroll>
+            "The new identity gives us something we didn't know we needed — the confidence of being recognized without being loud."
+          </span>
+        </blockquote>
+        <div class="testimonial-author reveal-up">
+          <div class="avatar">JM</div>
+          <div>
+            <div style="font-weight: 500;">James Morrison</div>
+            <div style="color: var(--muted); font-size: 13px;">CEO, Atlas Capital</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wide image -->
+    <section style="padding-bottom: clamp(80px, 12vw, 160px);">
+      <div class="full-bleed" data-reveal-image style="aspect-ratio: 21/9;">
+        <div class="full-bleed-fill" style="background: linear-gradient(135deg, #FF4A1C 0%, #1A1A1A 100%);">A·C</div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section-sm">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="margin-bottom: 48px;">Outcomes · 6 months post-launch</p>
+        <div class="stat-row">
+          <div class="reveal-up">
+            <div class="num">+147%</div>
+            <div class="label">Inbound leads YoY</div>
+          </div>
+          <div class="reveal-up">
+            <div class="num">2.1s</div>
+            <div class="label">Avg. page load</div>
+          </div>
+          <div class="reveal-up">
+            <div class="num">98</div>
+            <div class="label">Lighthouse score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next project -->
+    <section class="next-project">
+      <div class="container">
+        <a href="../work.html" class="work-card" style="cursor: pointer; display: block;">
+          <p class="eyebrow" style="margin-bottom: 24px;">Next project ↓</p>
+          <h2 class="h-1" data-magnetic="0.1" style="display: inline-block;">North Coffee Co. →</h2>
+          <p style="color: var(--muted); margin-top: 16px;">Identity · Packaging · 2025</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta-shape" data-parallax="-0.2"></div>
+      <div class="container cta-content">
+        <p class="eyebrow reveal-up" style="color: rgba(245,244,240,0.5); margin-bottom: 32px;" data-i18n="cta.kicker">Got a project?</p>
+        <h2>
+          <span data-split="lines" data-reveal-on-scroll data-i18n="cta.title_l1">Let's build</span><br/>
+          <span data-split="lines" data-reveal-on-scroll data-i18n="cta.title_l2">something</span><br/>
+          <span data-split="lines" data-reveal-on-scroll class="accent" data-i18n="cta.title_l3">memorable.</span>
+        </h2>
+        <div style="margin-top: 64px;">
+          <a href="../contact.html" class="btn" style="background: var(--bg); color: var(--ink);" data-magnetic="0.25">
+            <span data-i18n="cta.button">Start a project</span>
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo font-display" style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Studio Abdukarim</div>
+          <p style="color: rgba(245,244,240,0.6); max-width: 320px;" data-i18n="footer.tagline">An independent studio, by appointment only.</p>
+        </div>
+        <div><h4 data-i18n="footer.studio">Studio</h4><ul>
+          <li><a href="../about.html" data-i18n="footer.about">About</a></li>
+        </ul></div>
+        <div><h4 data-i18n="footer.work_h">Work</h4><ul>
+          <li><a href="../work.html" data-i18n="footer.case_studies">Case Studies</a></li>
+        </ul></div>
+        <div><h4 data-i18n="footer.contact_h">Contact</h4><ul>
+          <li><a href="mailto:hello@studio-abdukarim.com">hello@studio-abdukarim.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 Studio Abdukarim. All rights reserved.</span>
+        <span data-i18n="footer.made">Designed & built in-house</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- i18n loads from ../i18n -->
+  <script>
+    // Override i18n base path for sub-folder pages
+    window.__I18N_BASE__ = '../i18n';
+  </script>
+  <script type="module">
+    // Simple inline init that handles relative paths from /work/
+    import('../js/main.js');
+  </script>
+</body>
+</html>

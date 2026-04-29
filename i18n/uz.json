@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "work": "Ishlar",
+    "services": "Xizmatlar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "eyebrow": "Mustaqil dizayn studiyasi · 2024-dan beri",
+    "title_l1": "Biz muqarrar",
+    "title_l2": "tuyuladigan inter-",
+    "title_l3": "feyslarni yaratamiz.",
+    "lead": "Studio Abdukarim — dunyo bo'ylab shijoatli jamoalar uchun brend tizimlari, veb-saytlar va raqamli mahsulotlar yaratuvchi kichik dizayn amaliyoti.",
+    "meta_based": "Joylashuv",
+    "meta_based_v": "Toshkent · Masofadan",
+    "meta_clients": "Mijozlar",
+    "meta_clients_v": "Asoschilar, agentliklar, Fortune 500",
+    "meta_status": "Holat",
+    "meta_status_v": "Q3 2026 buyurtmalari ochiq",
+    "scroll": "Boshlash uchun pastga"
+  },
+  "marquee": {
+    "items": "Brend tizimlari / Veb dizayn / UI · UX / Motion / Identity / Editorial / Mahsulot / Art direction"
+  },
+  "manifesto": {
+    "eyebrow": "Manifest",
+    "text": "Biz trendlar ortidan yugurmaymiz. <em>Sokin, o'ylangan ishlar</em> qilamiz — o'quvchini hurmat qiladigan, mahsulotni sotadigan va mavsumdan uzoqroq yashaydigan. Har bir piksel o'z o'rnini oqlaydi. Har bir o'zaro ta'sirning sababi bor. Boshqasi — shovqin."
+  },
+  "work": {
+    "eyebrow": "Tanlangan ishlar",
+    "title": "So'nggi loyihalar",
+    "lead": "2024–2026 yillarda ishga tushirilgan brend va raqamli ishlardan kichik tanlama.",
+    "view_all": "Barcha ishlarni ko'rish",
+    "items": {
+      "atlas": { "name": "Atlas Capital", "tags": "Brend · Veb · 2026" },
+      "north": { "name": "North Coffee Co.", "tags": "Identity · Qadoqlash · 2025" },
+      "lumen": { "name": "Lumen Health", "tags": "Mahsulot · UI · 2025" },
+      "field": { "name": "Field Notes", "tags": "Editorial · 2025" },
+      "orbit": { "name": "Orbit Studio", "tags": "Brend · Motion · 2024" },
+      "praxis": { "name": "Praxis Journal", "tags": "Veb · Editorial · 2024" }
+    }
+  },
+  "process": {
+    "eyebrow": "Qanday ishlaymiz",
+    "title": "To'rt bosqichli amaliyot",
+    "items": [
+      { "title": "Tushunish", "body": "Workshoplar, audit va manfaatdor tomonlar bilan suhbatlar. Eskizga qo'l urishdan oldin muammoni nomlaymiz." },
+      { "title": "Dizayn", "body": "Kontseptlar, tizimlar va prototiplar. Tez iteratsiya qilamiz, keyin detallarni mukammallashtirish uchun sekinlashamiz." },
+      { "title": "Ishlab chiqish", "body": "Hamkorlarimiz bilan production sifatli build. Tailwind, GSAP, headless CMS — nima mos kelsa." },
+      { "title": "Topshirish", "body": "Ishga tushirish bo'yicha yordam, hujjatlar va jamoangiz yillar davomida o'sishi mumkin bo'lgan tizim." }
+    ]
+  },
+  "testimonial": {
+    "eyebrow": "Mijozlar so'zi",
+    "quote": "Ular ikkinchi dizayn jamoasi kabi ishlaydi — sokin, prinsipal va natijaga chin dildan jalb qilingan. Ishga tushirish ko'rsatkichlarimiz o'zi gapiradi.",
+    "author": "Sarah Chen",
+    "role": "Brend bo'yicha rahbar, Atlas Capital"
+  },
+  "cta": {
+    "kicker": "Loyihangiz bormi?",
+    "title_l1": "Esda qoladigan",
+    "title_l2": "narsa",
+    "title_l3": "quraylik.",
+    "lead": "Jamoangiz, muddatlaringiz va hal qilmoqchi bo'lgan muammoyingiz haqida bizga yozing.",
+    "button": "Loyihani boshlash"
+  },
+  "footer": {
+    "tagline": "Mustaqil studiya, faqat oldindan kelishuv asosida.",
+    "studio": "Studiya",
+    "about": "Biz haqimizda",
+    "process": "Jarayon",
+    "careers": "Karyera",
+    "work_h": "Ishlar",
+    "case_studies": "Case Study'lar",
+    "archive": "Arxiv",
+    "contact_h": "Aloqa",
+    "email": "hello@studio-abdukarim.com",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "social": "Ijtimoiy tarmoqlar",
+    "linkedin": "LinkedIn",
+    "behance": "Behance",
+    "rights": "© 2026 Studio Abdukarim. Barcha huquqlar himoyalangan.",
+    "made": "Studiya ichida ishlangan"
+  },
+  "page": {
+    "work_title": "Ishlar",
+    "work_lead": "Studiya tashkil etilganidan beri yakunlangan ishlar to'liq arxivi.",
+    "services_title": "Xizmatlar",
+    "services_lead": "To'rtta amaliyot yo'nalishi, bitta studiya. Ko'pchilik loyihalar ikki yoki undan ortiq sohani birlashtiradi.",
+    "about_title": "Biz haqimizda",
+    "about_lead": "Asoschi boshqaradigan kichik studiya — uzoq muddatli hamkorlikka e'tibor qaratamiz.",
+    "contact_title": "Bog'lanish",
+    "contact_lead": "Har bir murojaatga 24 soat ichida javob beramiz."
+  }
+}

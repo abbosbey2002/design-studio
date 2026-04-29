@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Studio Abdukarim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <style>
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding-top: 48px;
+      border-top: 1px solid var(--line);
+    }
+    .stat .num { font-family: var(--font-display); font-size: clamp(40px, 5vw, 72px); font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
+    .stat .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 12px; }
+    @media (max-width: 768px) { .stat-grid { grid-template-columns: 1fr 1fr; gap: 40px 24px; } }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .team-card .photo {
+      aspect-ratio: 3/4;
+      background: var(--line);
+      border-radius: 4px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 80px;
+      font-weight: 500;
+      color: var(--bg);
+    }
+    .team-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 500; }
+    .team-card p { font-size: 14px; color: var(--muted); margin-top: 4px; }
+    @media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="./index.html" class="logo" data-magnetic="0.2">Studio Abdukarim</a>
+    <nav>
+      <a href="./work.html" data-i18n="nav.work">Work</a>
+      <a href="./services.html" class="nav-link-hide-mobile" data-i18n="nav.services">Services</a>
+      <a href="./about.html" class="nav-link-hide-mobile" data-i18n="nav.about">About</a>
+      <a href="./contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="lang-toggle">
+        <button data-lang="uz">UZ</button><span style="opacity:0.4">/</span><button data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section style="padding: 200px 0 120px;">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="margin-bottom: 32px;">Studio · Est. 2024</p>
+        <h1 class="h-display"><span data-split="lines" data-reveal-on-load data-i18n="page.about_title">About</span></h1>
+        <p class="body-lg reveal-up" style="max-width: 720px; margin-top: 40px;" data-i18n="page.about_lead">
+          A small, founder-led studio focused on long-term partnerships over headcount.
+        </p>
+      </div>
+    </section>
+
+    <!-- Manifesto block -->
+    <section class="section section-sm">
+      <div class="container">
+        <p class="manifesto-text">
+          <span data-split="words" data-reveal-on-scroll data-i18n-html>
+            We believe the best design is the kind you don't notice. Every project is led personally — no juniors handed your brief, no account managers between you and the work. Just <em class="accent">two designers, one engineer, and the time it deserves.</em>
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section-sm">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="margin-bottom: 32px;">By the numbers</p>
+        <div class="stat-grid">
+          <div class="stat reveal-up">
+            <div class="num">42</div>
+            <div class="label">Projects shipped</div>
+          </div>
+          <div class="stat reveal-up">
+            <div class="num">18</div>
+            <div class="label">Countries served</div>
+          </div>
+          <div class="stat reveal-up">
+            <div class="num">3</div>
+            <div class="label">Awwwards SOTD</div>
+          </div>
+          <div class="stat reveal-up">
+            <div class="num">100%</div>
+            <div class="label">Repeat clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" id="team">
+      <div class="container">
+        <div style="display:flex; justify-content: space-between; align-items: end; margin-bottom: 64px; flex-wrap: wrap; gap: 24px;">
+          <div>
+            <p class="eyebrow reveal-up" style="margin-bottom: 24px;">Team</p>
+            <h2 class="h-2 reveal-up">Three people. <em style="color: var(--accent); font-style: italic;">No layers.</em></h2>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card reveal-up">
+            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);">A</div>
+            <h3>Abdukarim Q.</h3>
+            <p>Founder, Design Director</p>
+          </div>
+          <div class="team-card reveal-up">
+            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #FF4A1C 0%, #C73314 100%);">M</div>
+            <h3>Maya R.</h3>
+            <p>Senior Designer</p>
+          </div>
+          <div class="team-card reveal-up">
+            <div class="photo" data-reveal-image style="background: linear-gradient(135deg, #2D4A3E 0%, #1A2E26 100%);">D</div>
+            <h3>Daniel I.</h3>
+            <p>Engineering Lead</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta-shape" data-parallax="-0.2"></div>
+      <div class="container cta-content">
+        <p class="eyebrow reveal-up" style="color: rgba(245,244,240,0.5); margin-bottom: 32px;" data-i18n="cta.kicker">Got a project?</p>
+        <h2>
+          <span data-split="lines" data-reveal-on-scroll data-i18n="cta.title_l1">Let's build</span><br/>
+          <span data-split="lines" data-reveal-on-scroll data-i18n="cta.title_l2">something</span><br/>
+          <span data-split="lines" data-reveal-on-scroll class="accent" data-i18n="cta.title_l3">memorable.</span>
+        </h2>
+        <div style="margin-top: 64px;">
+          <a href="./contact.html" class="btn" style="background: var(--bg); color: var(--ink);" data-magnetic="0.25">
+            <span data-i18n="cta.button">Start a project</span>
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo font-display" style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Studio Abdukarim</div>
+          <p style="color: rgba(245,244,240,0.6); max-width: 320px;" data-i18n="footer.tagline">An independent studio, by appointment only.</p>
+        </div>
+        <div><h4 data-i18n="footer.studio">Studio</h4><ul>
+          <li><a href="./about.html" data-i18n="footer.about">About</a></li>
+        </ul></div>
+        <div><h4 data-i18n="footer.work_h">Work</h4><ul>
+          <li><a href="./work.html" data-i18n="footer.case_studies">Case Studies</a></li>
+        </ul></div>
+        <div><h4 data-i18n="footer.contact_h">Contact</h4><ul>
+          <li><a href="mailto:hello@studio-abdukarim.com">hello@studio-abdukarim.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 Studio Abdukarim. All rights reserved.</span>
+        <span data-i18n="footer.made">Designed & built in-house</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
